@@ -6,3 +6,17 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct OrganisationDashboardView: View {
+
+    var body: some View {
+        Text("OrganisationDashboardView")
+    }
+}
+
+struct OrganisationDashboardView_Previews: PreviewProvider {
+    static var previews: some View {
+        OrganisationDashboardView()
+    }
+}
