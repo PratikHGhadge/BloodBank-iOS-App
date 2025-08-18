@@ -9,9 +9,16 @@ import Foundation
 import SwiftUI
 
 struct OrganisationDashboardView: View {
+    @State private var selectedTab: OrganisationTabs = .inventory
 
     var body: some View {
-        Text("OrganisationDashboardView")
+        TabView(selection: $selectedTab) {
+            ForEach(OrganisationTabs.allCases) { menu in
+                menu.destination.tabItem {
+                    Label(menu.title, systemImage: menu.icon)
+                }
+            }
+        }
     }
 }
 

@@ -9,9 +9,16 @@ import Foundation
 import SwiftUI
 
 struct AdminDashboardView: View {
-    
+    @State private var selectedTab: AdminTabs = .donorList
+
     var body: some View {
-        Text("AdminDashboardView")
+        TabView(selection: $selectedTab) {
+            ForEach(AdminTabs.allCases) { menu in
+                menu.destination.tabItem {
+                    Label(menu.title, systemImage: menu.icon)
+                }
+            }
+        }
     }
 }
 

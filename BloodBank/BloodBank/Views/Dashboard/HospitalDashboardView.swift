@@ -9,9 +9,16 @@ import Foundation
 import SwiftUI
 
 struct HospitalDashboardView: View {
-    
+    @State private var selectedTab: HospitalTabs = .organisation
+
     var body: some View {
-        Text("")
+        TabView(selection: $selectedTab) {
+            ForEach(HospitalTabs.allCases) { menu in
+                menu.destination.tabItem {
+                    Label(menu.title, systemImage: menu.icon)
+                }
+            }
+        }
     }
 }
 

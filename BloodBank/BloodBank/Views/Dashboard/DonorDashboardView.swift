@@ -11,9 +11,16 @@ import Foundation
 import SwiftUI
 
 struct DonorDashboardView: View {
-    
+    @State private var selectedTab: DonorTabs = .organisation
+
     var body: some View {
-        Text("DonorDashboardView")
+        TabView(selection: $selectedTab) {
+            ForEach(DonorTabs.allCases) { menu in
+                menu.destination.tabItem {
+                    Label(menu.title, systemImage: menu.icon)
+                }
+            }
+        }
     }
 }
 

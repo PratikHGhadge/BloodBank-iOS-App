@@ -27,6 +27,10 @@
 		F35297D22E4BA68600EFFC51 /* BloodBankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35297D12E4BA68600EFFC51 /* BloodBankUITestsLaunchTests.swift */; };
 		F3D0550A2E4CF70C00FCECF3 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D055092E4CF70C00FCECF3 /* AppState.swift */; };
 		F3D0550C2E4CF83200FCECF3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0550B2E4CF83200FCECF3 /* User.swift */; };
+		F3F893672E5393090001E37B /* OrganisationTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F893662E5393090001E37B /* OrganisationTabs.swift */; };
+		F3F893692E53986A0001E37B /* HospitalTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F893682E53986A0001E37B /* HospitalTabs.swift */; };
+		F3F8936B2E5399870001E37B /* DonorTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F8936A2E5399870001E37B /* DonorTabs.swift */; };
+		F3F8936D2E539A2B0001E37B /* AdminTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F8936C2E539A2B0001E37B /* AdminTabs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +74,10 @@
 		F35297D12E4BA68600EFFC51 /* BloodBankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodBankUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F3D055092E4CF70C00FCECF3 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		F3D0550B2E4CF83200FCECF3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F3F893662E5393090001E37B /* OrganisationTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganisationTabs.swift; sourceTree = "<group>"; };
+		F3F893682E53986A0001E37B /* HospitalTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalTabs.swift; sourceTree = "<group>"; };
+		F3F8936A2E5399870001E37B /* DonorTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorTabs.swift; sourceTree = "<group>"; };
+		F3F8936C2E539A2B0001E37B /* AdminTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminTabs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +240,10 @@
 		F35297E32E4BA9F100EFFC51 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F3F893662E5393090001E37B /* OrganisationTabs.swift */,
+				F3F893682E53986A0001E37B /* HospitalTabs.swift */,
+				F3F8936A2E5399870001E37B /* DonorTabs.swift */,
+				F3F8936C2E539A2B0001E37B /* AdminTabs.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -377,9 +389,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3046E952E5229DF00C9099D /* Router.swift in Sources */,
+				F3F8936D2E539A2B0001E37B /* AdminTabs.swift in Sources */,
+				F3F893692E53986A0001E37B /* HospitalTabs.swift in Sources */,
+				F3F8936B2E5399870001E37B /* DonorTabs.swift in Sources */,
 				F3046E9E2E522CEB00C9099D /* DonorDashboardView.swift in Sources */,
 				F3D0550C2E4CF83200FCECF3 /* User.swift in Sources */,
 				F3046E922E51DCA400C9099D /* RegisterView.swift in Sources */,
+				F3F893672E5393090001E37B /* OrganisationTabs.swift in Sources */,
 				F3046E9C2E522CDC00C9099D /* OrganisationDashboardView.swift in Sources */,
 				F3D0550A2E4CF70C00FCECF3 /* AppState.swift in Sources */,
 				F35297B72E4BA68100EFFC51 /* LaunchView.swift in Sources */,
