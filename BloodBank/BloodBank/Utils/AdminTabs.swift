@@ -1,5 +1,5 @@
 //
-//  AdminMenu.swift
+//  AdminTabs.swift
 //  BloodBank
 //
 //  Created by Pratik Ghadge on 18/08/25.

@@ -20,7 +20,7 @@ enum Role: String, CaseIterable, Identifiable {
         case .admin:
             return "admin"
         case .organisation:
-            return "organisation"
+            return "oraganisation"
         case .hospital:
             return "hospital"
         }

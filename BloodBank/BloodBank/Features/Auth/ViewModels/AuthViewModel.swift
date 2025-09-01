@@ -28,7 +28,7 @@ class AuthViewModel: ObservableObject {
     @Published var isLoading = false
     @Published var errorMessage: String?
     
-    func login() {
+    func login(router: Router) {
         isLoading = true
         AuthService.shared.login(
             email: email,
@@ -40,6 +40,18 @@ class AuthViewModel: ObservableObject {
                     case .success(let response):
                         if let user = response.user, let token = response.token {
                             AppState.shared.saveUser(user, token: token)
+                            switch user.role {
+                            case "donor":
+                                router.reset(to: .donorDashboard)
+                            case "hospital":
+                                router.reset(to: .hospitalDashboard)
+                            case "oraganisation":
+                                router.reset(to: .organisationDashboard)
+                            case "admin":
+                                router.reset(to: .adminDashboard)
+                            default:
+                                router.reset(to: .login)
+                            }
                         } else {
                             self.errorMessage = response.message ?? "Login failed"
                         }
@@ -50,7 +62,7 @@ class AuthViewModel: ObservableObject {
             }
     }
     
-    func register() {
+    func register(router: Router) {
         isLoading = true
         AuthService.shared.register(
             email: email,

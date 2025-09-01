@@ -27,6 +27,10 @@
 		F35297D22E4BA68600EFFC51 /* BloodBankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F35297D12E4BA68600EFFC51 /* BloodBankUITestsLaunchTests.swift */; };
 		F3D0550A2E4CF70C00FCECF3 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D055092E4CF70C00FCECF3 /* AppState.swift */; };
 		F3D0550C2E4CF83200FCECF3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D0550B2E4CF83200FCECF3 /* User.swift */; };
+		F3DD97562E54DF9100441BC0 /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD97552E54DF9100441BC0 /* InventoryView.swift */; };
+		F3DD97582E54DFE300441BC0 /* InventoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD97572E54DFE300441BC0 /* InventoryViewModel.swift */; };
+		F3DD975A2E54DFF700441BC0 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD97592E54DFF700441BC0 /* Inventory.swift */; };
+		F3DD97682E54E52400441BC0 /* AddInventorySheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3DD97672E54E52400441BC0 /* AddInventorySheet.swift */; };
 		F3F893672E5393090001E37B /* OrganisationTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F893662E5393090001E37B /* OrganisationTabs.swift */; };
 		F3F893692E53986A0001E37B /* HospitalTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F893682E53986A0001E37B /* HospitalTabs.swift */; };
 		F3F8936B2E5399870001E37B /* DonorTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F8936A2E5399870001E37B /* DonorTabs.swift */; };
@@ -74,6 +78,10 @@
 		F35297D12E4BA68600EFFC51 /* BloodBankUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BloodBankUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F3D055092E4CF70C00FCECF3 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		F3D0550B2E4CF83200FCECF3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F3DD97552E54DF9100441BC0 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
+		F3DD97572E54DFE300441BC0 /* InventoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryViewModel.swift; sourceTree = "<group>"; };
+		F3DD97592E54DFF700441BC0 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		F3DD97672E54E52400441BC0 /* AddInventorySheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInventorySheet.swift; sourceTree = "<group>"; };
 		F3F893662E5393090001E37B /* OrganisationTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganisationTabs.swift; sourceTree = "<group>"; };
 		F3F893682E53986A0001E37B /* HospitalTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalTabs.swift; sourceTree = "<group>"; };
 		F3F8936A2E5399870001E37B /* DonorTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonorTabs.swift; sourceTree = "<group>"; };
@@ -124,15 +132,6 @@
 			path = Dashboard;
 			sourceTree = "<group>";
 		};
-		F30942D02E5117E10001042E /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				F30942D12E5117FF0001042E /* LoginView.swift */,
-				F3046E912E51DCA400C9099D /* RegisterView.swift */,
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
 		F35297A82E4BA68100EFFC51 = {
 			isa = PBXGroup;
 			children = (
@@ -156,12 +155,11 @@
 		F35297B32E4BA68100EFFC51 /* BloodBank */ = {
 			isa = PBXGroup;
 			children = (
+				F3DD975B2E54E34400441BC0 /* Features */,
 				F3D055082E4CF6EB00FCECF3 /* Services */,
 				F35297E32E4BA9F100EFFC51 /* Utils */,
 				F35297E22E4BA9E500EFFC51 /* Resources */,
-				F35297E02E4BA97E00EFFC51 /* ViewModels */,
 				F35297DF2E4BA96D00EFFC51 /* Views */,
-				F35297DE2E4BA94A00EFFC51 /* Models */,
 				F35297B42E4BA68100EFFC51 /* BloodBankApp.swift */,
 				F35297B62E4BA68100EFFC51 /* LaunchView.swift */,
 			);
@@ -193,30 +191,12 @@
 			path = BloodBankUITests;
 			sourceTree = "<group>";
 		};
-		F35297DE2E4BA94A00EFFC51 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				F3D0550B2E4CF83200FCECF3 /* User.swift */,
-				F30942C82E50F3CC0001042E /* AuthResponse.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		F35297DF2E4BA96D00EFFC51 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				F3046E962E522C8B00C9099D /* Dashboard */,
-				F30942D02E5117E10001042E /* Auth */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		F35297E02E4BA97E00EFFC51 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				F30942CE2E510EC60001042E /* AuthViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		F35297E12E4BA9D400EFFC51 /* Network */ = {
@@ -256,6 +236,94 @@
 				F3D055092E4CF70C00FCECF3 /* AppState.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		F3DD975B2E54E34400441BC0 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F3DD97632E54E43800441BC0 /* Auth */,
+				F3DD975C2E54E37200441BC0 /* Organisation */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F3DD975C2E54E37200441BC0 /* Organisation */ = {
+			isa = PBXGroup;
+			children = (
+				F3DD975F2E54E39900441BC0 /* Inventory */,
+			);
+			path = Organisation;
+			sourceTree = "<group>";
+		};
+		F3DD975F2E54E39900441BC0 /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				F3DD97622E54E3D900441BC0 /* ViewModels */,
+				F3DD97612E54E3C900441BC0 /* Views */,
+				F3DD97602E54E3B600441BC0 /* Models */,
+			);
+			path = Inventory;
+			sourceTree = "<group>";
+		};
+		F3DD97602E54E3B600441BC0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3DD97592E54DFF700441BC0 /* Inventory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3DD97612E54E3C900441BC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3DD97552E54DF9100441BC0 /* InventoryView.swift */,
+				F3DD97672E54E52400441BC0 /* AddInventorySheet.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F3DD97622E54E3D900441BC0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F3DD97572E54DFE300441BC0 /* InventoryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F3DD97632E54E43800441BC0 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F3DD97662E54E46800441BC0 /* ViewModels */,
+				F3DD97652E54E45E00441BC0 /* Views */,
+				F3DD97642E54E44B00441BC0 /* Models */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		F3DD97642E54E44B00441BC0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F3D0550B2E4CF83200FCECF3 /* User.swift */,
+				F30942C82E50F3CC0001042E /* AuthResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3DD97652E54E45E00441BC0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F3046E912E51DCA400C9099D /* RegisterView.swift */,
+				F30942D12E5117FF0001042E /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F3DD97662E54E46800441BC0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F30942CE2E510EC60001042E /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -398,10 +466,14 @@
 				F3F893672E5393090001E37B /* OrganisationTabs.swift in Sources */,
 				F3046E9C2E522CDC00C9099D /* OrganisationDashboardView.swift in Sources */,
 				F3D0550A2E4CF70C00FCECF3 /* AppState.swift in Sources */,
+				F3DD97682E54E52400441BC0 /* AddInventorySheet.swift in Sources */,
 				F35297B72E4BA68100EFFC51 /* LaunchView.swift in Sources */,
+				F3DD97562E54DF9100441BC0 /* InventoryView.swift in Sources */,
 				F30942D22E5117FF0001042E /* LoginView.swift in Sources */,
+				F3DD97582E54DFE300441BC0 /* InventoryViewModel.swift in Sources */,
 				F3046E9A2E522CBF00C9099D /* HospitalDashboardView.swift in Sources */,
 				F30942C92E50F3CC0001042E /* AuthResponse.swift in Sources */,
+				F3DD975A2E54DFF700441BC0 /* Inventory.swift in Sources */,
 				F30942CF2E510EC60001042E /* AuthViewModel.swift in Sources */,
 				F35297B52E4BA68100EFFC51 /* BloodBankApp.swift in Sources */,
 				F30942CB2E50F5A90001042E /* APIClient.swift in Sources */,

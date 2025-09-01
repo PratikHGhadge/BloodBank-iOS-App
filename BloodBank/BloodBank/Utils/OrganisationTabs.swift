@@ -1,5 +1,5 @@
 //
-//  OrganisationMenu.swift
+//  OrganisationTabs.swift
 //  BloodBank
 //
 //  Created by Pratik Ghadge on 18/08/25.
@@ -40,7 +40,7 @@ enum OrganisationTabs: CaseIterable, Identifiable {
         // TODO: Update text view with actual view later
         switch self {
         case .inventory:
-            Text("inventory")
+            InventoryView()
         case .donor:
             Text("donor")
         case .hospital:

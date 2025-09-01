@@ -1,6 +1,7 @@
 import SwiftUI
 
 struct RegisterView: View {
+    @EnvironmentObject var router: Router
     @StateObject private var vm = AuthViewModel()
     
     var body: some View {
@@ -50,7 +51,7 @@ struct RegisterView: View {
                     ProgressView()
                 } else {
                     Button("Register") {
-                        vm.register()
+                        vm.register(router: router)
                     }
                 }
                 
@@ -64,7 +65,7 @@ struct RegisterView: View {
                     .font(.body)
                 
                 Button("Login!") {
-                    // TODO: navigate to LoginView
+                    router.reset(to: .login)
                 }
             }
             .padding(.top, 20)
