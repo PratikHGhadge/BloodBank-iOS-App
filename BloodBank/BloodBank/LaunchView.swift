@@ -16,7 +16,7 @@ struct LaunchView: View {
         VStack {
             Spacer()
             
-            Text("🩸 Blood Bank")
+            Text("🩸 Blood Bank 🩸")
                 .font(.largeTitle)
                 .fontWeight(.bold)
                 .padding(.bottom, 20)
